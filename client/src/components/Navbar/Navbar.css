@@ -1,0 +1,19 @@
+.logo{
+    background-color: red;
+    border-radius: 50%;
+    border-color: black;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    border-color: red;
+    height: 100px;
+    width: 100px;
+}
+.logo-img{
+    height: 100%;
+    border-color: black;
+    width: 100%;
+    border-radius: 50%;
+    /* object-fit: cover; */
+}
