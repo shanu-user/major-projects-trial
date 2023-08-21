@@ -1,0 +1,28 @@
+.register{
+    border: 1px solid black;
+    width: 1360px;
+    position: fixed;
+    top: 22%;
+    left: 13%;
+}
+
+.register-headers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    border-bottom: 1px solid black;
+}
+
+.headers{
+    padding-left: 91px;
+    padding-right: 72px;
+    border-right: 1px solid black;
+}
+
+.information{
+    padding: 40px;
+}
+
+label{
+    padding-right: 40px; 
+}
