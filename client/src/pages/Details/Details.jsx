@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Details = () => {
+const Details = (props) => {
   return (
-    <div>Details</div>
+    <div style={{display:props.show==="details"?'block':'none'}}>Details</div>
   )
 }
 

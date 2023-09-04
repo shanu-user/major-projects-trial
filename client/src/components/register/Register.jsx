@@ -8,16 +8,16 @@ import Details from '../../pages/Details/Details'
 import Treatment from '../../pages/Treatment/Treatment'
 import {Link, Routes, Route} from 'react-router-dom'
 const Register = () => {
-  const [showVar, setShowVar]=useState("")
+  const [showVar, setShowVar]=useState("info")
   return (
     <div className="register">
         <div className="register-headers">
-          <div className="headers"><Link to='/info' onClick={()=>setShowVar(info)}>Info</Link></div>
-          <div className="headers"><Link to="/symptoms">Symptoms</Link></div>
-          <div className="headers"><Link to="/questions">Questions</Link></div>
-          <div className="headers"><Link to="/conditions">Conditions</Link></div>
-          <div className="headers"><Link to="/details">Details</Link></div>
-          <div className="headers"><Link to="/treatment">Treatment</Link></div>
+          <div className="headers" onClick={()=>setShowVar("info")}><Link>Info</Link></div>
+          <div className="headers" onClick={()=>setShowVar("symptoms")}><Link>Symptoms</Link></div>
+          <div className="headers" onClick={()=>setShowVar("questions")}><Link>Questions</Link></div>
+          <div className="headers" onClick={()=>setShowVar("conditions")}><Link>Conditions</Link></div>
+          <div className="headers" onClick={()=>setShowVar("details")}><Link>Details</Link></div>
+          <div className="headers" onClick={()=>setShowVar("treatment")}><Link>Treatment</Link></div>
         </div>
         <div className="page">
           {/* <Routes>

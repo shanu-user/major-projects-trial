@@ -1,20 +1,21 @@
-import { Server } from "socket.io";
+import express from 'express'
+import connectDB from './connectMongoDb.js'
+import cors from 'cors'
+import dotenv from 'dotenv'
 
-const io = new Server(8000, {
-  cors: true,
-});
+dotenv.config()
+connectDB()
+const app = express()
+app.use(express.json({limit: "30mb", extended: true}))
+app.use(express.urlencoded({limit: "30mb", extended: true}))
+app.use(cors())
 
-const emailToSocketIdMap = new Map()
+app.get('/', (req,res) =>{
 
-io.on("connection", (socket) => {
-  // send a message to the client
-  console.log("Socket connected", socket.id)
-  socket.on('room:join', data =>{
-    console.log(data)
-    const {email, room} = data
-    emailToSocketIdMap.set(email, socket.id)
-    socketidToEmailMap.set(socket.id, email)
-    io.to(socket.id).emit('room:join',data)
+})
 
-  })
-});
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, ()=>{
+  console.log(`Server running on port ${PORT}`)
+})

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Questions = () => {
+const Questions = (props) => {
   return (
-    <div>Questions</div>
+    <div style={{display:props.show==="questions"?'block':'none'}}>Questions</div>
   )
 }
 

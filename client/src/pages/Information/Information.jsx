@@ -1,8 +1,8 @@
 import React from 'react'
 import "../../components/register/Register.css"
-const Information = () => {
+const Information = (props) => {
   return (
-    <div className="information">
+    <div className="information" style={{display:props.show==="info"?'block':'none'}}>
         <label htmlFor="name">Name</label>
         <input type="text" /><br />
         <label htmlFor="age">Age</label>

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Conditions = () => {
+const Conditions = (props) => {
   return (
-    <div>Conditions</div>
+    <div style={{display: props.show==="conditions"?'block':'none'}}>Conditions</div>
   )
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Treatment = () => {
+const Treatment = (props) => {
   return (
-    <div>Treatment</div>
+    <div style={{display:props.show==="treatment"?'block':'none'}}>Treatment</div>
   )
 }
 
