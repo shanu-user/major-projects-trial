@@ -1,5 +1,8 @@
 # Referrals for creation of projects
 
+
+References for heart diseases, their symptoms and their treatments
+    https://www.who.int/health-topics/cardiovascular-diseases#tab=tab_1
 Survey on sensors and Smart devices for IoT enabled Intelligence Healthcare System
     https://link.springer.com/article/10.1007/s11277-023-10528-8
 Support for backend: django documentation
