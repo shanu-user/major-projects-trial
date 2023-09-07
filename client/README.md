@@ -1,3 +1,12 @@
+# Referrals for creation of projects
+
+Survey on sensors and Smart devices for IoT enabled Intelligence Healthcare System
+    https://link.springer.com/article/10.1007/s11277-023-10528-8
+Support for backend: django documentation
+    https://docs.djangoproject.com/en/4.2/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
